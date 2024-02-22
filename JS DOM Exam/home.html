@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed</title>
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/home.css">
+  <script src="./scripts/home.js"></script>
+</head>
+<body>
+  <main class="posts">
+    <section class="post">
+      <header>
+        <img src="./public/user.jpeg" alt="user photo" class="user-photo">
+        <div class="post-info">
+          <span class="user-name">Martin Hristov</span> <!-- author -->
+          <span class="post-time">3 hours ago</span> <!-- posted_before -->
+        </div>
+
+        <div class="delete-post"></div>
+      </header>
+
+      <main>
+        <span class="post-caption">Exploring new places! 🌍 #AdventureTime</span> <!-- caption -->
+        <img class="post-image" src="https://disruptorsmagazine.com/wp-content/uploads/2023/03/pexels-oleksandr-pidvalnyi-3278215-1024x683.jpg" alt="Exploring new places! 🌍 #AdventureTime"> <!-- image_url -->
+      </main>
+
+      <footer class="post-footer">
+        <div class="likes">266 likes</div> <!-- likes_count -->
+        <div class="footer-actions">
+          <button class="like-btn">Like</button>
+          <button class="comment-btn">Comment</button>
+        </div>
+        <div class="comments"> <!-- comments [] -->
+          <div class="comment"> <!-- comments [0] -->
+            <img class="comment-user-photo" src="./public/user.jpeg" alt="comment user photo">
+            <div class="comment-text">
+              <span class="comment-text-user">Martin Hristov</span> <!-- comments [0].author -->
+              <span class="comment-text-text">Amazing!</span> <!-- comments [0].text -->
+            </div>
+          </div>
+          <div class="comment">
+            <img class="comment-user-photo" src="./public/user.jpeg" alt="comment user photo">
+            <div class="comment-text">
+              <span class="comment-text-user">Kiril Petkov</span>
+              <span class="comment-text-text">How cool is that!</span>
+            </div>
+          </div>
+          <div class="comment">
+            <img class="comment-user-photo" src="./public/user.jpeg" alt="comment user photo">
+            <div class="comment-text">
+              <span class="comment-text-user">Ivan Ivanov</span>
+              <span class="comment-text-text">WoW!!!</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
