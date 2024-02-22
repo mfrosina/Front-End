@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>HTML / CSS Exam Page</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="container">
+		<header id="header" class="header">
+			<section class="menu">
+				<h1>Списък от студенти</h1>
+				<nav>
+					<ul class="navbar">
+						<li><a href="#">Помощ</a></li>
+						<li><a href="#">Начало</a></li>
+						<li><a href="#">Изход</a></li>
+					</ul>
+				</nav>
+			</section>
+			<form action="/submit" class="add-by-input" method="post">
+				<input class="input-student" type="text" id="student-name" name="Student Name"
+					placeholder="Име на студент" required>
+				<button class="submit-btn" type="submit">Добави</button>
+			</form>
+		</header>
+
+		<main id="main">
+			<section>
+				<ul class="student-list">
+					<li>
+						<span>Иван</span>
+						<input class="textfield" type="number" min="2" max="6" placeholder="Оценка" />
+					</li>
+					<li>
+						<span>Елена</span><input class="textfield" type="number" min="2" max="6" placeholder="Оценка" />
+					</li>
+					<li id="checked">
+						<span>Петър</span><input class="textfield" type="number" min="2" max="6" placeholder="Оценка" />
+					</li>
+					<li>
+						<span>Жоро</span><input class="textfield" type="number" min="2" max="6" placeholder="Оценка" />
+					</li>
+					<li>
+						<span>Ния</span><input class="textfield" type="number" min="2" max="6" placeholder="Оценка" />
+					</li>
+					<li>
+						<span>Цани</span><input class="textfield" type="number" min="2" max="6" placeholder="Оценка" />
+					</li>
+					<li>
+						<span>Мартин</span><input class="textfield" type="number" min="2" max="6"
+							placeholder="Оценка" />
+					</li>
+				</ul>
+			</section>
+		</main>
+	</div>
+</body>
+
+</html>

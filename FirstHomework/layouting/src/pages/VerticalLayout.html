@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vertical Layout</title>
+
+</head>
+
+<body>
+	<div id="page-wrapper">
+		<header class="dark-green header"></header>
+		<main class="green content"></main>
+		<footer class="footer">
+			<section class="left purple"></section>
+			<section class="right blue"></section>
+		</footer>
+	</div>
+
+	<style>
+		body, html {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+
+		#page-wrapper {
+            display: grid;
+            grid-template-rows: 2fr 6fr 1fr;
+            gap: 16px;
+			margin:0 24px 24px 24px;
+            height: 601.5px;
+        }
+
+        .dark-green.header
+        {
+            background-color: darkgreen;
+			padding:5rem;
+            grid-row: 1 / 2;
+        }
+
+        .green.content {
+			background-color: rgb(69, 185, 69);
+			grid-row: 2/3;
+        }
+
+		.footer {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr;
+            grid-row: 3 / 4;
+            gap: 32px;
+        }
+
+        .left.purple {
+            background-color: purple;
+			padding:2rem;
+        }
+
+        .right.blue {
+            background-color: blue;
+			padding:2rem;
+        }
+
+	</style>
+</body>
+
+</html>

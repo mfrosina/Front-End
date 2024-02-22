@@ -1,0 +1,14 @@
+{
+  "unlisted": [
+    ".DS_Store",
+    ".git",
+    ".gitignore",
+    "package.json",
+    "package-lock.json",
+    "node_modules",
+    "serve.json",
+    "wdio.conf.js",
+    ".tmp",
+    "test"
+  ]
+}

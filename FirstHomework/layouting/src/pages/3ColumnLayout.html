@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>3Column Layout</title>
+
+</head>
+
+<body>
+	<div id="page-wrapper">
+		<header class="dark-blue header"></header>
+		<main class="content">
+			<section class="left-section purple"></section>
+			<section class="middle-section green"></section>
+			<section class="right-section red"></section>
+		</main>
+		<footer class="footer blue">
+		</footer>
+	</div>
+
+	<style>
+		body,
+		html {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		#page-wrapper {
+            display: grid;
+            grid-template-rows: 1fr 12fr 1fr;
+            gap: 8px;
+            margin: 0 24px 24px 24px;
+            height: 100vh;
+        }
+
+        .dark-blue.header,
+        .footer.blue {
+            background-color: darkblue;
+            grid-row: 1 / 2;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-row: 2 / 3;
+            gap: 16px;
+        }
+
+        .left-section.purple,
+        .middle-section.green,
+        .right-section.red {
+            height: 100%;
+        }
+
+        .left-section.purple {
+            background-color: purple;
+        }
+
+        .middle-section.green {
+            background-color: rgb(69, 185, 69);
+        }
+
+        .right-section.red {
+            background-color: red;
+        }
+
+        .footer.blue {
+            background-color: blue; /* Adjust as needed */
+            grid-row: 3 / 4;
+        }
+	</style>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "html-css-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "test": "wdio",
+    "test-layouting": "wdio --spec ./layouting/test/specs/layouting.spec.js",
+    "test-simple-web-site": "wdio --spec ./simple-web-site/test/specs/simple-web-site.spec.js",
+    "test-students-list": "wdio --spec ./students-list/test/specs/students-list.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cli": "^8.20.5",
+    "@wdio/local-runner": "^8.20.5",
+    "@wdio/mocha-framework": "^8.20.3",
+    "@wdio/spec-reporter": "^8.20.0",
+    "serve": "^14.2.1",
+    "wdio-image-comparison-service": "^5.0.3",
+    "webdriverio": "^8.20.4"
+  }
+}

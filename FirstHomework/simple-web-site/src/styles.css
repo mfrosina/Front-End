@@ -1,0 +1,313 @@
+/* Reset some default styles */
+body,
+h1,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	border: none;
+	box-sizing: border-box;
+	margin: auto;
+	font-family: Arial, Helvetica, sans-serif;;
+}
+
+body {
+
+	background-image: url(https://via.placeholder.com/1200x600);
+	background-position: top;
+	background-color: #f0f0f0;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	background-color: rgb(67, 67, 67);
+	color: white;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 1rem;
+}
+
+
+.logo-img {
+	width: 100px;
+	height: 100px;
+	margin: 1.25rem;
+}
+
+#header h1 {
+	font-size:34px;
+	font-weight: bold;
+	text-align: center;
+	margin: 1.25rem;
+}
+
+.navbar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	background-color: #605b5b;
+	color: white;
+	overflow: hidden;
+	height: 62px;
+	margin: 1.25rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.navbar a {
+	color: white;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	padding: 0.65rem 0;
+	margin-left: 0.65rem;
+	margin-right: 1.25rem;
+}
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown .dropbtn {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	background-color: inherit;
+	border: none;padding: 0.65rem 0;
+	margin-left: 0.65rem;
+	margin-right: 1.25rem;
+}
+
+.submenu {
+	background-color: #605b5b;
+	display: none;
+	position: absolute;
+	min-width: 160px;
+}
+
+.submenu a {
+	color: white;
+	padding: 0.75rem 1rem;
+	text-decoration: none;
+	text-align: left;
+	float: none;
+	display: block;
+}
+
+.dropdown:hover .submenu {
+	display: block;
+}
+
+.navbar a:hover,
+.dropdown .dropbtn:hover {
+
+	background-color: #928c8c;
+}
+
+#main {
+	margin: -1rem;
+	padding: 0;
+}
+
+.background-content {
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 6.5rem 20rem 6.5rem 20rem;
+
+}
+
+.background-content div {
+	margin: 1.25rem 1.25rem 0 1.25rem;
+}
+
+.background-content #title {
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.background-content #subtitle {
+	font-size: 18px;
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: normal;
+	margin-bottom: 1.25rem;
+}
+
+#three-rows {
+	background-color: white;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 16px;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1.25rem;
+	margin-bottom: 1.25rem;
+}
+
+.two-column {
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+	box-sizing: border-box;
+}
+
+.two-column .img {
+	margin: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.col-par {
+	width: 650px;
+	height: 40px;
+	text-align: justify;
+	text-indent: 20px;
+	float: right;
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-start;
+	padding-left: 3rem;
+}
+
+#footer {
+	background-color: rgb(67, 67, 67);
+	margin: -0.25rem;
+	margin-top: -1.25rem;
+	margin-bottom: -1.25rem;
+}
+
+#footer div {
+	background-color: rgb(67, 67, 67);
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	width: 100%;
+	height: 25px;
+	margin: 0.65rem 0.65rem 0.65rem 0.65rem;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+@media (max-width: 1440px) and (max-height: 900) {
+	#header {
+		font-size: 14px;
+		padding-right: 0.5rem;
+	}
+
+	.navbar a,
+	.dropdown .dropbtn {
+		margin: 0.65rem 0.65rem;
+	}
+
+	.logo-img {
+		margin: 1.3rem 0.5rem;
+	}
+
+	#main .background-content {
+		margin: 6.5rem 15rem 6.5rem 15rem;
+	}
+
+	#three-rows,
+	.two-column {
+		margin: 5rem;
+	}
+
+	.col-par {
+		padding-left: 2rem;
+	}
+}
+
+@media (max-width: 1336px) and (max-height: 768) {
+
+	.navbar a,
+	.dropdown .dropbtn {
+		margin: 0.65rem 0.75rem;
+	}
+
+	.logo-img {
+		margin: 1.3rem 0.5rem;
+	}
+
+	#main .background-content {
+		margin: 6.5rem 0 6.5rem 0;
+	}
+
+	#three-rows,
+	.two-column {
+		margin: 2rem;
+	}
+
+	.col-par {
+		padding-top: 2rem;
+		padding-left: 2rem;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#header {
+		padding-right: 0.2rem;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+	}
+
+	.navbar {
+		font-size: 16px;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100px;
+	}
+
+	.navbar a,
+	.dropdown,
+	.dropdown .dropbtn {
+		margin: 0;
+		padding: 0.5rem;
+		display: block;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.logo-img {
+		margin: 1.3rem 0 1.3rem 0;
+	}
+
+	#main .background-content {
+		text-align: center;
+		
+		margin: 6.5rem 0 6.5rem 0;
+	}
+
+	#three-rows,
+	.two-column {
+		margin: 1.25rem;
+	}
+
+	.col-par {
+		padding: 1rem;
+		margin-top: 10rem;
+		margin-left: -2rem;
+	}
+}
