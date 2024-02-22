@@ -1,0 +1,229 @@
+:root {
+
+
+    --header-background-color: rgb(178, 157, 131);
+    --body-background-img: linear-gradient(to bottom right, rgb(218, 204, 188), rgb(178, 157, 131));
+    --important-text: rgb(127, 104, 75);
+    --hover-color: rgb(127, 104, 75);
+    --visited-color: rgb(56, 43, 28);
+    --text-color: black;
+    --underline-color: black;
+}
+
+input[type="checkbox"]:checked~.theme-switcher {
+
+    --header-background-color: rgb(71, 49, 23);
+    --body-background-img: linear-gradient(to bottom right, rgb(143, 121, 97), rgb(71, 49, 23));
+    --important-text: rgb(55, 50, 44);
+    --hover-color: rgb(195, 162, 122);
+    --visited-color: rgb(170, 138, 101);
+    --text-color: rgb(167, 145, 118);
+    --underline-color: rgb(167, 145, 118);
+}
+
+.theme-switcher {
+    border: 2px solid rgb(178, 157, 131);
+    margin-top: 5rem;
+}
+
+body {
+    background-image: var(--body-background-img);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5rem;
+}
+
+
+header {
+    background-color: var(--header-background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    background-image: var(--body-background-img);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.fade-out {
+    opacity: 100%;
+  }
+
+.fade-out:hover {
+    opacity: 50%;
+    transition: opacity 1s;
+  }
+
+#personal-photo {
+    width: 125px;
+    height: 125px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+#name {
+    font-size: 32px;
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+
+#personal-info {
+    font-size: 16px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.personal-info i {
+    font-style: italic;
+}
+
+.profile {
+    font-size: 16px;
+    font-family: "Brush Script MT", "Brush Script MT", monospace;
+    margin: 0 5rem 5rem 5rem;
+    padding-top: 2rem;
+    text-align: justify;
+}
+
+.profile h4 {
+    font-size: 20px;
+    font-family: Copperplate, Copperplate, fantasy;
+    margin-bottom: 0;
+    text-decoration: underline solid var(--underline-color) 3px;
+}
+
+.edu-courses {
+    font-size: 16px;
+    font-family: "Brush Script MT", "Brush Script MT", monospace;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5rem;
+    margin-top: -2.5rem;
+    margin-right: 3rem;
+    padding-right: 2rem;
+}
+
+.edu-courses .education {
+    font-size: 16px;
+    font-family: "Brush Script MT", "Brush Script MT", monospace;
+}
+
+.education #specialty {
+    color: var(--important-text);
+    margin-top: -1rem;
+}
+
+.education h4 {
+    font-size: 20px;
+    font-family: Copperplate, Copperplate, fantasy;
+    margin-bottom: 0;
+    text-decoration: underline solid var(--underline-color) 3px;
+}
+
+.coursework {
+    margin: 5rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    padding-right: 2rem;
+    text-align: justify;
+}
+
+.coursework h5 {
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.coursework ul {
+    list-style-type: square;
+    text-align: justify;
+}
+
+a:link {
+    color: var(--visited-color);
+    text-decoration: none;
+}
+
+
+a:visited {
+    color: var(--visited-color);
+}
+
+a:hover {
+    color: var(--hover-color);
+}
+
+.experience {
+    font-size: 16px;
+    font-family: "Brush Script MT", "Brush Script MT", monospace;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 5rem;
+    margin-top: -10rem;
+    margin-right: 3rem;
+    padding-right: 2rem;
+}
+
+.experience #experience-info {
+    white-space: nowrap;
+}
+
+.experience #experience-info #position {
+    color: var(--important-text);
+    margin-top: -1rem;
+}
+
+.experience #experience-description {
+    margin: 10rem;
+    margin-top: 4.5rem;
+    margin-right: 3rem;
+    padding-right: 2rem;
+    padding-left: 10rem;
+    text-align: justify;
+    float: inline-end;
+    clear: both;
+}
+
+.experience h4 {
+    font-size: 20px;
+    font-family: Copperplate, Copperplate, fantasy;
+    margin-bottom: 0;
+    text-decoration: underline solid var(--underline-color) 3px;
+}
+
+.other #skills {
+    font-size: 16px;
+    font-family: "Brush Script MT", "Brush Script MT", monospace;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 5rem;
+    margin-top: -14rem;
+    margin-right: 3rem;
+    padding-right: 22rem;
+}
+
+.other #skills h4 {
+    font-size: 20px;
+    font-family: Copperplate, Copperplate, fantasy;
+    margin-bottom: 0;
+    text-decoration: underline solid var(--underline-color) 3px;
+}
+
+.other #skills ul {
+    list-style-type: square;
+    text-align: justify;
+    margin: 10rem;
+    margin-top: 3rem;
+    margin-right: 3rem;
+    padding-right: 2rem;
+    padding-left: 22rem;
+}
