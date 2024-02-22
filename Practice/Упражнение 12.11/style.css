@@ -1,0 +1,45 @@
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#header {
+    background-color: rgb(60, 164, 60);
+    color:white;
+    padding: 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#header #subtitle {
+    margin:1rem;
+}
+
+#navbar {
+    background-color: rgb(63, 51, 51);
+    color:white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:0.5rem;
+}
+
+#navbar a {
+    color:white;
+    text-decoration: none;
+    font-weight: normal;
+    margin:0.5rem;
+}
+
+#home {
+    margin:3rem;
+}

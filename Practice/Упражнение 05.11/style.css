@@ -1,0 +1,156 @@
+body,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: radial-gradient(pink, white);
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#header {
+    background-color: rgb(208, 99, 117);
+    color: white;
+    width: 100%;
+    height: 150px;
+    padding-top: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    align-items: center;
+}
+
+#welcome {
+    margin-top: 0.5rem;
+}
+
+#navbar {
+    background-color: rgb(80, 29, 38);
+    color: white;
+    margin-top: 5rem;
+    width: 100%;
+    height: 40px;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#navbar a {
+    color: white;
+    text-align: start;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-right: -1.25rem;
+    padding: 0.8rem;
+}
+
+#navbar a:hover {
+    background-color: rgb(208, 99, 117);
+}
+
+#menu {
+    margin-top: -1rem;
+    border: 20px solid rgb(208, 99, 117);
+
+}
+
+#menu-table {
+    width: 100%;
+    border: 1px;
+}
+
+#title-table {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 1rem 1rem 0 1rem;
+}
+
+tr,
+td {
+    padding: 0.5rem;
+    color: black;
+}
+
+th {
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(241, 184, 193);
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+#menu-table button {
+    background-color: black;
+    color: white;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    padding: 0.3rem;
+}
+
+#menu-table button:hover {
+    background-color: rgb(80, 29, 38);
+}
+
+#my-order {
+    padding: 1rem;
+}
+
+#fname {
+    width: 100%;
+}
+
+#request {
+    width: 100%;
+}
+
+#order-table {
+    width: 50%;
+}
+
+
+tfoot td {
+    background-color: rgb(80, 29, 38);
+    border: none;
+    border-collapse: collapse;
+}
+
+tfoot #total-price {
+    font-weight: bold;
+    text-align: end;
+    color: white;
+}
+
+#place-order {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    cursor: pointer;
+}
+
+#place-order:hover {
+    background-color: rgb(208, 99, 117);
+}
+
+#footer {
+    background-color: rgb(208, 99, 117);
+    color:white;
+    text-align: center;
+    padding:2rem;
+
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Menu</title>
+    <style>
+        :root {
+
+            
+            --header-background-color: rgb(219, 73, 97);
+            --nav-background-color: rgb(80, 29, 38);
+            --body-background-color: rgb(241, 184, 193);
+            --even-row:rgb(255, 153, 170);
+            --footer-background-color: rgb(219, 73, 97);
+        }
+
+        input[type="checkbox"]:checked~.theme-switcher {
+
+            --header-background-color: #451d7e;
+            --nav-background-color: #200d3b;
+            --body-background-color: #bd93f9;
+            --even-row:#9a69e0;
+            --footer-background-color: #451d7e;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--light-theme);
+            font-size: 16px;
+            padding: 5rem;
+        }
+
+        .theme-switcher {
+            border: 2px solid var(--dark-pink);
+            margin-top: 5rem;
+        }
+
+        .title {
+            margin-bottom: 1rem;
+        }
+
+        header {
+            background-color: var(--header-background-color);
+            background-size: cover;
+            color: var(--white);
+            text-align: center;
+            padding: 8rem 0;
+        }
+
+        nav {
+            background-color: var(--nav-background-color);
+            color: var(--white);
+            padding: 0.75rem 2rem;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-right: 0.75rem;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        section {
+            padding: 1rem;
+            background-color: var(--body-background-color);
+            margin-bottom: 1rem;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        th,
+        td {
+            border: 1px solid var(--white);
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: var(--even-row);
+        }
+
+        tfoot tr {
+            background-color: var(--nav-background-color);
+            color:white;
+            font-weight: bold;
+        }
+
+        tfoot tr td {
+            text-align: right;
+        }
+
+        .form-group {
+            margin: 1rem 0;
+        }
+
+        .form-group-item {
+            margin: 0.5em 0;
+        }
+
+        input,
+        textarea {
+            margin: 0.25rem 0;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: var(--footer-background-color);
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <label> Dark theme </label>
+    <input class="change-theme-control" type="checkbox" />
+    <div class="theme-switcher">
+        <header>
+            <h1 class="title">My Restaurant</h1>
+            <p>Welcome to our delightful restaurant. Explore our menu below.</p>
+        </header>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#my-order">My order</a>
+        </nav>
+        <main>
+            <section>
+                <h2 class="title" id="menu">Menu</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Order</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Main Course 1</td>
+                            <td>Our signature main course, a succulent steak cooked to perfection.</td>
+                            <td>$12.99</td>
+                            <td><button class="button">Order</button></td>
+                        </tr>
+                        <tr>
+                            <td>Main Course 2</td>
+                            <td>Freshly caught seafood served with an exquisite lemon herb sauce.</td>
+                            <td>$14.99</td>
+                            <td><button class="button">Order</button></td>
+                        </tr>
+                        <tr>
+                            <td>Main Course 3</td>
+                            <td>Authentic Italian pasta made with love, topped with homemade marinara sauce.</td>
+                            <td>$10.99</td>
+                            <td><button class="button">Order</button></td>
+                        </tr>
+                        <tr>
+                            <td>Dessert 1</td>
+                            <td>Irresistible dessert with layers of rich chocolate and creamy vanilla. A heavenly treat.
+                            </td>
+                            <td>$3.99</td>
+                            <td><button class="button">Order</button></td>
+                        </tr>
+                        <tr>
+                            <td>Dessert 2</td>
+                            <td>Classic cheesecake with a luscious raspberry drizzle. The perfect ending to your meal.
+                            </td>
+                            <td>$4.99</td>
+                            <td><button class="button">Order</button></td>
+                        </tr>
+                        <tr>
+                            <td>Dessert 3</td>
+                            <td>Refreshing fruit sorbet made from the freshest seasonal fruits. A light and fruity
+                                dessert.
+                            </td>
+                            <td>$2.99</td>
+                            <td><button class="button">Order</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2 class="title" id="my-order">My order</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Choose an option:</label>
+                        <div class="form-group-item">
+                            <input type="radio" id="dine-in" name="option" value="Dine-In" required>
+                            <label for="dine-in">Dine-In</label>
+                        </div>
+                        <div class="form-group-item">
+                            <input type="radio" id="takeout" name="option" value="Takeout" required>
+                            <label for="takeout">Takeout</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Additional options:</label>
+                        <div class="form-group-item">
+                            <input type="checkbox" id="add-dessert" name="add-dessert">
+                            <label for="add-dessert">Add Dessert</label>
+                        </div>
+                        <div class="form-group-item">
+                            <input type="checkbox" id="add-drink" name="add-drink">
+                            <label for="add-drink">Add Drink</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="special-requests">Special Requests:</label>
+                        <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                    </div>
+                    <table style="width: 600px;">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dessert 1</td>
+                                <td>x2</td>
+                                <td>$3.99</td>
+                            </tr>
+                            <tr>
+
+                                <td>Main Course 3</td>
+                                <td>x1</td>
+                                <td>$10.99</td>
+                            </tr>
+                            <tr>
+
+                                <td>Main Course 3</td>
+                                <td>x1</td>
+                                <td>$10.99</td>
+                            </tr>
+                            <tr>
+
+                                <td>Main Course 3</td>
+                                <td>x1</td>
+                                <td>$10.99</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">$18.97</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <button type="submit" class="button form-group">Place Order</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <small>&copy; 2023 My Restaurant. All rights reserved.</small>
+        </footer>
+    </div>
+</body>
+
+</html>

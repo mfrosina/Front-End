@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>My Restaurant</h1>
+        <p id="welcome">Welcome to our delightful restaurant. Explore our menu below.</p>
+        <nav id="navbar">
+            <a href="/menu/">Menu</a>
+            <a href="/my-order/">My order</a>
+        </nav>
+    </header>
+    <main>
+        <section id="menu">
+            <h4 id="title-table">Menu</h4>
+            <table id="menu-table">
+                <tr>
+                    <th>
+                        Item Name
+                    </th>
+                    <th>
+                        Description
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Order
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Main Course 1
+                    </td>
+                    <td>
+                        Our signature main course, a succulent steak cooked to perfection.
+                    </td>
+                    <td>
+                        $12.99
+                    </td>
+                    <td>
+                        <button type="/submit">Order</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Main Course 2
+                    </td>
+                    <td>
+                        Freshly caught seafood served with an exquisite lemon herb sauce.
+
+                    </td>
+                    <td>
+                        $14.99
+                    </td>
+                    <td>
+                        <button type="/submit">Order</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Main Course 3
+                    </td>
+                    <td>
+                        Authentic Italian pasta made with love, topped with homemade marinara sauce.
+                    </td>
+                    <td>
+                        $10.99
+                    </td>
+                    <td>
+                        <button type="/submit">Order</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Dessert 1
+                    </td>
+                    <td>
+                        Irresistible dessert with layers of rich chocolate and creamy vanilla. A heavenly treat.
+                    </td>
+                    <td>
+                        $3.99
+                    </td>
+                    <td>
+                        <button type="button">Order</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Dessert 2
+                    </td>
+                    <td>
+                        Classic cheesecake with a luscious raspberry drizzle. The perfect ending to your meal.
+                    </td>
+                    <td>
+                        $4.99
+                    </td>
+                    <td>
+                        <button type="/submit">Order</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Dessert 3
+                    </td>
+                    <td>
+                        Refreshing fruit sorbet made from the freshest seasonal fruits. A light and fruity dessert.
+                    </td>
+                    <td>
+                        $2.99
+                    </td>
+                    <td>
+                        <button type="/submit">Order</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="my-order">
+            <h4>My Order</h4>
+            <form>
+                <label for="fname">Name:</label><br>
+                <input type="text" id="fname"><br><br>
+                <p>Choose an option:</p>
+                <input type="radio" id="dine-in">
+                <label for="dine-in">Dine-in</label><br>
+                <input type="radio" id="takeout">
+                <label for="takeout">Takeout</label><br><br>
+                <p>Additional options</p>
+                <input type="checkbox" id="dessert">
+                <label for="dessert">Add Dessert</label><br>
+                <input type="checkbox" id="drink">
+                <label for="drink">Add Drink</label><br><br>
+                <label for="request">Special Requests:</label><br>
+                <textarea id="request" name="Special Requests" rows="4" cols="100">
+                </textarea><br><br>
+            </form>
+            <table id="order-table">
+                <thead>
+                    <tr>
+                        <th>
+                            Item Name
+                        </th>
+                        <th>
+                            Quantity
+                        </th>
+                        <th>
+                            Price
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Dessert 1
+                        </td>
+                        <td>
+                            x2
+                        </td>
+                        <td>
+                            $3.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Main Course 3
+                        </td>
+                        <td>
+                            x1
+                        </td>
+                        <td>
+                            $10.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Main Course 3
+                        </td>
+                        <td>
+                            x1
+                        </td>
+                        <td>
+                            $10.99
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Main Course 3
+                        </td>
+                        <td>
+                            x1
+                        </td>
+                        <td>
+                            $10.99
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td id="total-price">$18.97</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button type="/submit" id="place-order">Place Order</button>
+        </section>
+    </main>
+    <footer id="footer">
+        <p>&copy; My Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
